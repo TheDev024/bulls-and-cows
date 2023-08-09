@@ -1,2 +1,2 @@
-# bulls-and-cows
-Classic code breaking game: "Bulls and cows"
+# Bulls and Cows
+Classic code breaking game: "Bulls and Cows"
