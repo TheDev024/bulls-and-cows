@@ -6,6 +6,5 @@ val scanner = Scanner(System.`in`)
 
 fun main() {
     val game = BullsAndCows()
-    game.guess()
+    game.play()
 }
-
