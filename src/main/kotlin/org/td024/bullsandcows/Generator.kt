@@ -6,7 +6,7 @@ class Generator {
 
         fun generateSecret(size: Int): String {
             val secretCharArray = System.nanoTime().toString().toSet().toCharArray()
-            return if (secretCharArray.size >= size) String(secretCharArray).take(size)
+            return if (secretCharArray.size >= size) String(secretCharArray).takeLast(size)
             else generateSecret(size)
         }
     }
