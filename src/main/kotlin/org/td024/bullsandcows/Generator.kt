@@ -4,10 +4,12 @@ class Generator {
 
     companion object {
 
-        fun generateSecret(size: Int): String {
-            val secretCharArray = CharArray(size) { ('0'..'9').random() }.toSet().toCharArray()
+        fun generateSecret(size: Int, charSet: List<Char>): String {
+            val secretCharArray = CharArray(size) {
+                charSet.random()
+            }.toSet().toCharArray()
             return if (secretCharArray.size == size) String(secretCharArray)
-            else generateSecret(size)
+            else generateSecret(size, charSet)
         }
     }
 }
